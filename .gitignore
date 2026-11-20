@@ -1,0 +1,29 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+# Python files
+_pycache_/
+*.py[cod]
+
+#Virtual environment
+venv/
+.venv/
+env/
+
+#Django database
+db.sqlite3
+
+#Uploaded media and documents
+media/
+
+#Private environment settings
+.env
+.env.*
+
+#Django generated files
+staticfiles/
+
+#macOS files
+.DS_Store
+
+# Editor settings
+.idea/

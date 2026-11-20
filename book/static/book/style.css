@@ -1,0 +1,249 @@
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+    color: #1e293b;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 8%;
+}
+
+.navbar h2 {
+    font-size: 24px;
+}
+
+/* Main container */
+.container {
+    width: 84%;
+    margin: 40px auto;
+}
+
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+/* Book layout */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+/* Individual book cards */
+.book-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-2px);
+}
+
+.book-card h2 {
+    margin-bottom: 12px;
+    color: #14213d;
+}
+
+.book-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* View details button */
+.book-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.book-link:hover {
+    background-color: #1d4ed8;
+}
+
+/* BOOK DETAILS PAGE */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.detail-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 45px auto;
+}
+
+.back-link {
+    display: inline-block;
+    color: #2563eb;
+    text-decoration: none;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.detail-card {
+    background: white;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.detail-heading h1 {
+    font-size: 36px;
+    color: #14213d;
+    margin: 15px 0;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.author-name {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.detail-divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 30px 0;
+}
+
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.detail-section h3 {
+    color: #14213d;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.detail-section p {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-tag {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+    .detail-container {
+        width: 92%;
+    }
+
+    .detail-card {
+        padding: 25px;
+    }
+
+    .detail-heading h1 {
+        font-size: 27px;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.author-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.book-cover {
+    width: 150px!important;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 15px;
+}
+
+
+/* BM Library Search Bar */
+.search-form {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 35px auto 45px;
+    gap: 15px;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    height: 65px !important;
+    padding: 15px 22px !important;
+    font-size: 20px !important;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    height: 65px !important;
+    padding: 0 35px !important;
+    font-size: 19px !important;
+    border: none;
+    border-radius: 12px;
+    background: #263849;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+}
