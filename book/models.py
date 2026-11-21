@@ -1,5 +1,7 @@
 from django.db import models
 
+from cloudinary_storage.storage import RawMediaCloudinaryStorage
+
 # Create your models here.
 
 class Author(models.Model):
@@ -30,7 +32,7 @@ class Book(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     category = models.ManyToManyField (Category)
     cover_image = models.ImageField(upload_to="book_covers/",blank=True, null=True)
-    pdf_file = models.FileField(upload_to="book_pdfs/",blank=True,null=True)
+    pdf_file = models.FileField(upload_to="book_pdfs/",storage=RawMediaCloudinaryStorage(), blank=True,null=True)
     source = models.CharField(max_length=255,blank=True)
     license = models.CharField(max_length=255,blank=True)
     pdf_url = models.URLField(blank=True)
